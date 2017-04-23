@@ -10,10 +10,10 @@
 首先看一下实际的效果图：
 
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170423120051566?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTI5Njc3NzUxMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+[这里写图片描述](http://img.blog.csdn.net/20170423120051566?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTI5Njc3NzUxMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </center>
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170423120103346?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTI5Njc3NzUxMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+[这里写图片描述](http://img.blog.csdn.net/20170423120103346?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTI5Njc3NzUxMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </center>
 
 
@@ -55,7 +55,7 @@
         Matrix.scaleM(mMVP, 0, scaleX, scaleY, 0);
 ```
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170423123032565?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTI5Njc3NzUxMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+[这里写图片描述](http://img.blog.csdn.net/20170423123032565?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTI5Njc3NzUxMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </center>
 可以从上图中看到，虚线为原来图像的大小，经过缩小后变为实线矩形的大小
 
@@ -67,7 +67,7 @@ Matrix.translateM(mMVP, 0, ratioX * 2, ratioY * 2, 0f);
 ```
 大致的过程如下图：
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170423123055841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTI5Njc3NzUxMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+[这里写图片描述](http://img.blog.csdn.net/20170423123055841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTI5Njc3NzUxMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </center>
 
 至此，在同一个GLSurfaceView上绘制两个视频数据，并且将第二个视频缩小和移动的过程就叙述完了，由于上面是将缩小和移动分开来讲，其实缩小和移动的代码是在一起的：
