@@ -54,11 +54,11 @@ public class TextureResources {
 //        matrix.setRotate(-90, bitmap.getWidth() / 2, bitmap.getHeight() / 2);
 //        matrix.preScale(0.25f,0.25f,0.5f,0.5f);
         mCanvas.drawColor(Color.WHITE);
-        Rect src = new Rect(0,0,bitmap.getWidth(),bitmap.getHeight());
-        int halfWidth = (mBitmap.getWidth() - bitmap.getWidth())/2;
-        int halfHeight = (mBitmap.getHeight() - bitmap.getHeight())/2;
-        Rect dst = new Rect(halfWidth,halfHeight,halfWidth+bitmap.getWidth(),halfHeight+bitmap.getHeight());
-        mCanvas.drawBitmap(bitmap,src,dst,null);
+        Rect src = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
+        int halfWidth = (mBitmap.getWidth() - bitmap.getWidth()) / 2;
+        int halfHeight = (mBitmap.getHeight() - bitmap.getHeight()) / 2;
+        Rect dst = new Rect(halfWidth, halfHeight, halfWidth + bitmap.getWidth(), halfHeight + bitmap.getHeight());
+        mCanvas.drawBitmap(bitmap, src, dst, null);
         bitmap.recycle();
         return mBitmap;
     }

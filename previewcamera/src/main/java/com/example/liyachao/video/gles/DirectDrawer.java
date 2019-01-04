@@ -119,12 +119,12 @@ public class DirectDrawer {
     public void setFromCamera(boolean b) {
         isFromCamera = b;
     }
-
+    int point = 5;
     public void draw() {
         if (isBackCamera) {
-            mMVP[5] = Math.abs(mMVP[5]);
+            mMVP[point] = Math.abs(mMVP[point]);
         } else {
-            mMVP[5] = -Math.abs(mMVP[5]);
+            mMVP[point] = -Math.abs(mMVP[point]);
         }
 
         // 将program添加到OpenGL ES环境中

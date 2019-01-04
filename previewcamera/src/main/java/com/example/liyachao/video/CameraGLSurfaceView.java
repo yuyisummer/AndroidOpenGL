@@ -116,7 +116,6 @@ public class CameraGLSurfaceView extends GLSurfaceView implements Renderer, Surf
         mDirectDrawers.add(mBitmapDirectDrawer);
         LOG.logI("mTextureID: " + mBitmapTextureID);
         LOG.logI("mTextureID: " + mTextureID);
-
     }
 
     @Override
