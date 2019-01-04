@@ -92,8 +92,6 @@ public class CameraGLSurfaceView extends GLSurfaceView implements Renderer, Surf
                 (mScreenHeight - mMargin), (mMargin + mThumbnailWidth), (mScreenHeight - mMargin - mThumbnailHeight));
 
         mTextureResources = TextureResources.getInstance();
-
-
     }
 
     private List<DirectDrawer> mDirectDrawers;

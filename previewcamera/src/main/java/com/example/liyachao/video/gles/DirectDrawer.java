@@ -40,7 +40,7 @@ public class DirectDrawer {
     private float mVertices[] = new float[8];
 
     private float mTextureCoords[] = new float[8];
-    private float mTextHeightRatio = 0.1f;
+    private float mTextHeightRatio = 0.05f;
 
     // 需要绘制的纹理
     private int texture;
