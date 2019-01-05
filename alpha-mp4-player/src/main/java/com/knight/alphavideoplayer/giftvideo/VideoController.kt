@@ -4,7 +4,6 @@ import android.arch.lifecycle.Lifecycle
 import android.arch.lifecycle.LifecycleObserver
 import android.arch.lifecycle.OnLifecycleEvent
 import android.support.annotation.IntDef
-import android.util.Log
 import android.view.ViewGroup
 import com.knight.alphavideoplayer.giftvideo.player.IPlayer
 import com.knight.alphavideoplayer.giftvideo.player.VideoPlayerListener
@@ -49,16 +48,14 @@ class VideoController(val parent: ViewGroup, val isLoop: Boolean = false,
     val listener: VideoPlayerListener by lazy(LazyThreadSafetyMode.NONE) {
         object : VideoPlayerListener() {
             override fun onCompletion(player: IPlayer) {
-
+                alphaView.clearTexture()
             }
 
             override fun onError(player: IPlayer, message: String) {
                 super.onError(player, message)
-                Log.i("liyachao222", "message:$message")
             }
 
             override fun onPrepared(player: IPlayer) {
-
             }
         }
     }

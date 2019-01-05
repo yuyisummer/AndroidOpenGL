@@ -29,14 +29,13 @@ class IjkPlayer(override val listener: VideoPlayerListener, override val context
                 listener.onError(this@IjkPlayer, "what:$what , extra:$extra")
                 return@setOnErrorListener false
             }
-            setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "mediacodec", 1)
+//            setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "mediacodec", 1)
             isLooping = isLoop
         }
     }
 
     override fun start() {
         mMediaPlayer.start()
-        Log.i("liyachao222", "start")
     }
 
     override fun release() {

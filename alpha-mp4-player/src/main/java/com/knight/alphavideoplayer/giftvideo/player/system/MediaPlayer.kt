@@ -70,7 +70,7 @@ class MediaPlayer(override val listener: VideoPlayerListener, override val conte
 
     override fun prepare(mp4Res: Any) {
         mMediaPlayer.setDataSource(context, buildUri(mp4Res))
-        mMediaPlayer.prepareAsync()
+        mMediaPlayer.prepare()
     }
 
 }

@@ -67,6 +67,10 @@ class AlphaTextureView : GLTextureView, GLSurfaceView.Renderer,
         requestRender()
     }
 
+    override fun clearTexture() {
+        requestRender()
+    }
+
     override fun onDetachedFromWindow() {
         super.onDetachedFromWindow()
         mSurface.release()

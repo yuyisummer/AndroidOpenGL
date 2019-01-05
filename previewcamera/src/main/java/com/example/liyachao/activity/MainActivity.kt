@@ -45,7 +45,7 @@ class MainActivity : Activity(), View.OnClickListener {
             }
         }
         val root = findViewById<FrameLayout>(R.id.root)
-        val videoController = VideoController(root)
+        val videoController = VideoController(root,isLoop = false,playerType = VideoController.IJKPLAYER)
         videoController.prepareVideo(FileUtil.initPath() + "Alarms/unicorn.mp4")
         videoController.start()
 //        FileUtil.initPath()

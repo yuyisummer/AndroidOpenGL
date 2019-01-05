@@ -7,6 +7,7 @@ import android.graphics.SurfaceTexture
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 import com.knight.alphavideoplayer.giftvideo.gles.GiftDrawer
 import com.knight.alphavideoplayer.giftvideo.view.IAlphaView
@@ -27,10 +28,6 @@ class AlphaGLSurfaceView : GLSurfaceView, GLSurfaceView.Renderer,
     init {
         setEGLContextClientVersion(2) // set OpenGL ES's version number to 2.0
 
-//        mMediaPlayer.setScreenOnWhilePlaying(true)
-//        mMediaPlayer.isLooping = true
-//        mMediaPlayer.setDataSource(context, Uri.parse("android.resource://${context.packageName}/${R.raw.unicorn}"))
-//        mMediaPlayer.prepare()
         setEGLConfigChooser(8, 8, 8, 8, 16, 0)
         holder.setFormat(PixelFormat.TRANSLUCENT)
         setZOrderOnTop(true)
@@ -68,6 +65,10 @@ class AlphaGLSurfaceView : GLSurfaceView, GLSurfaceView.Renderer,
 
 
     override fun onFrameAvailable(surfaceTexture: SurfaceTexture?) {
+        requestRender()
+    }
+
+    override fun clearTexture() {
         requestRender()
     }
 
