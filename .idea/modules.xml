@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidOpenGL.iml" filepath="$PROJECT_DIR$/AndroidOpenGL.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidOpenGL.iml" filepath="$PROJECT_DIR$/AndroidOpenGL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alphavideoplayer/alphavideoplayer.iml" filepath="$PROJECT_DIR$/alphavideoplayer/alphavideoplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/previewcamera/previewcamera.iml" filepath="$PROJECT_DIR$/previewcamera/previewcamera.iml" />
       <module fileurl="file://$PROJECT_DIR$/previewcamera/previewcamera.iml" filepath="$PROJECT_DIR$/previewcamera/previewcamera.iml" />
     </modules>

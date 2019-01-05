@@ -1,4 +1,4 @@
-package com.example.liyachao.utils;
+package com.knight.alphavideoplayer.utils;
 
 import android.graphics.Bitmap;
 import android.os.Environment;

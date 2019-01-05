@@ -7,12 +7,12 @@
     android:background="@drawable/ic_launcher"
     tools:context="com.example.liyachao.activity.MainActivity">
 
-    <com.example.liyachao.giftvideo.view.surfaceview.AlphaGLSurfaceView
+    <com.knight.alphavideoplayer.giftvideo.view.surfaceview.AlphaGLSurfaceView
     android:id="@+id/camera_gl_surface_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
 
-    <!--<com.example.liyachao.giftvideo.view.AlphaTextureView-->
+    <!--<com.knight.alphavideoplayer.giftvideo.view.AlphaTextureView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent" />-->
 
