@@ -30,8 +30,7 @@ class AlphaGLSurfaceView : GLSurfaceView, GLSurfaceView.Renderer,
         setEGLConfigChooser(8, 8, 8, 8, 16, 0)
         holder.setFormat(PixelFormat.TRANSLUCENT)
         setZOrderOnTop(true)
-        System.out.print("你是瓜皮");
-        System.out.print("才怪");
+        System.out.println("测试分支功能" );
         setRenderer(this) // bind current surfaceview to Renderer
         renderMode = RENDERMODE_WHEN_DIRTY // set render's mode
     }
