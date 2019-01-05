@@ -5,18 +5,13 @@ import android.app.Activity
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.os.Environment
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.FrameLayout
-
 import com.example.liyachao.R
 import com.example.liyachao.utils.FileUtil
 import com.example.liyachao.video.CameraGLSurfaceView
 import com.knight.alphavideoplayer.giftvideo.VideoController
-
-import java.io.File
 
 /**
  * @author liyachao 296777513

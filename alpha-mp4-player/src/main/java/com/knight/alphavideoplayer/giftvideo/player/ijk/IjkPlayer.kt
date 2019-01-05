@@ -3,7 +3,6 @@ package com.knight.alphavideoplayer.giftvideo.player.ijk
 import android.content.Context
 import android.graphics.SurfaceTexture
 import android.net.Uri
-import android.util.Log
 import android.view.Surface
 import com.knight.alphavideoplayer.giftvideo.player.IPlayer
 import com.knight.alphavideoplayer.giftvideo.player.VideoPlayerListener

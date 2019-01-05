@@ -6,7 +6,6 @@ import android.net.Uri
 import android.view.Surface
 import com.knight.alphavideoplayer.giftvideo.player.IPlayer
 import com.knight.alphavideoplayer.giftvideo.player.VideoPlayerListener
-import tv.danmaku.ijk.media.player.IjkMediaPlayer
 
 class MediaPlayer(override val listener: VideoPlayerListener, override val context: Context, override var isLoop: Boolean = false) : IPlayer {
 

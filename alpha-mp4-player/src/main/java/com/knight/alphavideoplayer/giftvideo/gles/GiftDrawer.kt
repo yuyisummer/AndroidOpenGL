@@ -8,7 +8,6 @@ import android.opengl.Matrix
 import com.knight.alphavideoplayer.R
 import com.knight.alphavideoplayer.utils.GlUtil
 import com.knight.alphavideoplayer.utils.TextResourceReader
-import java.lang.RuntimeException
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer

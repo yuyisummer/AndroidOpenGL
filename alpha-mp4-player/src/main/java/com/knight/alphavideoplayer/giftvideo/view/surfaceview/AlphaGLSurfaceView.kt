@@ -7,7 +7,6 @@ import android.graphics.SurfaceTexture
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import com.knight.alphavideoplayer.giftvideo.gles.GiftDrawer
 import com.knight.alphavideoplayer.giftvideo.view.IAlphaView

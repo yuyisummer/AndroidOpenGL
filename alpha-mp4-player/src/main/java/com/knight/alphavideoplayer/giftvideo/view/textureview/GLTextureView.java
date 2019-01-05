@@ -19,11 +19,11 @@ package com.knight.alphavideoplayer.giftvideo.view.textureview;
 import android.content.Context;
 import android.graphics.SurfaceTexture;
 import android.opengl.GLDebugHelper;
+import android.opengl.GLSurfaceView.Renderer;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.TextureView;
 import android.view.View;
-import android.opengl.GLSurfaceView.Renderer;
 
 import java.io.Writer;
 import java.lang.ref.WeakReference;

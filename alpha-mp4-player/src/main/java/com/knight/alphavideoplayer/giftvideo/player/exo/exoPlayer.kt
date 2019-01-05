@@ -7,8 +7,6 @@ import android.util.Log
 import android.view.Surface
 import bolts.Task
 import bolts.Task.call
-import com.knight.alphavideoplayer.giftvideo.player.IPlayer
-import com.knight.alphavideoplayer.giftvideo.player.VideoPlayerListener
 import com.google.android.exoplayer2.ExoPlaybackException
 import com.google.android.exoplayer2.ExoPlayerFactory
 import com.google.android.exoplayer2.Player
@@ -20,6 +18,8 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.google.android.exoplayer2.upstream.RawResourceDataSource
 import com.google.android.exoplayer2.util.Util
 import com.google.android.exoplayer2.video.VideoListener
+import com.knight.alphavideoplayer.giftvideo.player.IPlayer
+import com.knight.alphavideoplayer.giftvideo.player.VideoPlayerListener
 import java.util.concurrent.Callable
 
 class exoPlayer(override val listener: VideoPlayerListener, override val context: Context, override var isLoop: Boolean = false) : IPlayer {
