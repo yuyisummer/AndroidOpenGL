@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/alphavideoplayer" />
+            <option value="$PROJECT_DIR$/alpha-mp4-player" />
             <option value="$PROJECT_DIR$/previewcamera" />
           </set>
         </option>

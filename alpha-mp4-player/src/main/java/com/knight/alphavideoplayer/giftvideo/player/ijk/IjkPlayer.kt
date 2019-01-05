@@ -11,7 +11,6 @@ import tv.danmaku.ijk.media.player.IjkMediaPlayer
 
 class IjkPlayer(override val listener: VideoPlayerListener, override val context: Context, override var isLoop: Boolean = false) : IPlayer {
 
-
     private val mMediaPlayer: IjkMediaPlayer by lazy(LazyThreadSafetyMode.NONE) {
         IjkMediaPlayer().apply {
             setOnPreparedListener {
@@ -69,8 +68,12 @@ class IjkPlayer(override val listener: VideoPlayerListener, override val context
         }
     }
 
-    override fun prepareVideo(mp4Res: Any, surfaceTexture: SurfaceTexture) {
+    override fun setSurface(surfaceTexture: SurfaceTexture) {
         mMediaPlayer.setSurface(Surface(surfaceTexture))
+
+    }
+
+    override fun prepare(mp4Res: Any) {
         mMediaPlayer.setDataSource(RawDataSourceProvider.create(context, buildUri(mp4Res)))
         mMediaPlayer.prepareAsync()
     }

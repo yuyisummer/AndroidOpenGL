@@ -10,7 +10,6 @@ import tv.danmaku.ijk.media.player.IjkMediaPlayer
 
 class MediaPlayer(override val listener: VideoPlayerListener, override val context: Context, override var isLoop: Boolean = false) : IPlayer {
 
-
     private val mMediaPlayer: android.media.MediaPlayer by lazy(LazyThreadSafetyMode.NONE) {
         android.media.MediaPlayer().apply {
             setOnPreparedListener {
@@ -63,11 +62,13 @@ class MediaPlayer(override val listener: VideoPlayerListener, override val conte
             mp4Res is Uri -> mp4Res as Uri
             else -> throw RuntimeException("please check your mp4's resources")
         }
-
     }
 
-    override fun prepareVideo(mp4Res: Any, surfaceTexture: SurfaceTexture) {
+    override fun setSurface(surfaceTexture: SurfaceTexture) {
         mMediaPlayer.setSurface(Surface(surfaceTexture))
+    }
+
+    override fun prepare(mp4Res: Any) {
         mMediaPlayer.setDataSource(context, buildUri(mp4Res))
         mMediaPlayer.prepareAsync()
     }

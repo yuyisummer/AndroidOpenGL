@@ -17,7 +17,9 @@ interface IPlayer {
 
     fun getDuration(): Long
 
-    fun prepareVideo(mp4Res: Any, surfaceTexture: SurfaceTexture)
+    fun setSurface(surfaceTexture: SurfaceTexture)
+
+    fun prepare(mp4Res: Any)
 
     fun buildUri(mp4Res: Any): Uri
 

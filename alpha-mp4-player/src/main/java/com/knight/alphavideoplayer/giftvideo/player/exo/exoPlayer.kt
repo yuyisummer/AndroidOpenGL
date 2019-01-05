@@ -24,6 +24,7 @@ import java.util.concurrent.Callable
 
 class exoPlayer(override val listener: VideoPlayerListener, override val context: Context, override var isLoop: Boolean = false) : IPlayer {
 
+
     private val mMediaPlayer: SimpleExoPlayer by lazy {
         ExoPlayerFactory.newSimpleInstance(context).apply {
             addListener(object : Player.EventListener {
@@ -89,9 +90,13 @@ class exoPlayer(override val listener: VideoPlayerListener, override val context
         }
     }
 
-    override fun prepareVideo(mp4Res: Any, surfaceTexture: SurfaceTexture) {
+    override fun setSurface(surfaceTexture: SurfaceTexture) {
+        mMediaPlayer.setVideoSurface(Surface(surfaceTexture))
+
+    }
+
+    override fun prepare(mp4Res: Any) {
         call(Callable<Any> {
-            mMediaPlayer.setVideoSurface(Surface(surfaceTexture))
             val videoSource = ExtractorMediaSource.Factory(dataSourceFactory).createMediaSource(buildUri(mp4Res))
             if (isLoop) {
                 val loopingMediaSource = LoopingMediaSource(videoSource)
@@ -102,6 +107,5 @@ class exoPlayer(override val listener: VideoPlayerListener, override val context
 //            mMediaPlayer.playWhenReady = true
             return@Callable null
         }, Task.UI_THREAD_EXECUTOR)
-
     }
 }

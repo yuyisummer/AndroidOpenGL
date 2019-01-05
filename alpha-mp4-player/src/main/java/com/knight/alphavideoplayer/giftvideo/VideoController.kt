@@ -14,7 +14,6 @@ import com.knight.alphavideoplayer.giftvideo.player.system.MediaPlayer
 import com.knight.alphavideoplayer.giftvideo.view.IAlphaView
 import com.knight.alphavideoplayer.giftvideo.view.surfaceview.AlphaGLSurfaceView
 import com.knight.alphavideoplayer.giftvideo.view.textureview.AlphaTextureView
-import com.knight.alphavideoplayer.utils.FileUtil
 
 class VideoController(val parent: ViewGroup, val isLoop: Boolean = false,
                       @PlayerType playerType: Int = IJKPLAYER, @ViewType viewType: Int = GLSURFACEVIEW) : LifecycleObserver {
@@ -71,12 +70,16 @@ class VideoController(val parent: ViewGroup, val isLoop: Boolean = false,
         }
     }
 
-    fun prepareVideo(mp4Path: String) {
+    init {
         alphaView.onSurfaceCreated = {
-            player.prepareVideo(mp4Path, it)
+            player.setSurface(it)
 
         }
         parent.addView(alphaView.mView)
+    }
+
+    fun prepareVideo(mp4Path: String) {
+        player.prepare(mp4Path)
     }
 
     fun start() {

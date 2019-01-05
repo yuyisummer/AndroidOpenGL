@@ -1,1 +1,1 @@
-include ':previewcamera', ':alphavideoplayer'
+include ':previewcamera', ':alpha-mp4-player'
