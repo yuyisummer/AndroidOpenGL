@@ -26,7 +26,7 @@ class AlphaGLSurfaceView : GLSurfaceView, GLSurfaceView.Renderer,
 
     init {
         setEGLContextClientVersion(2) // set OpenGL ES's version number to 2.0
-
+        System.out.println("yjh");
         setEGLConfigChooser(8, 8, 8, 8, 16, 0)
         holder.setFormat(PixelFormat.TRANSLUCENT)
         setZOrderOnTop(true)
