@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AndroidOpenGL.iml" filepath="$PROJECT_DIR$/.idea/AndroidOpenGL.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidOpenGL.iml" filepath="$PROJECT_DIR$/AndroidOpenGL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AndroidOpenGL.iml" filepath="$PROJECT_DIR$/AndroidOpenGL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alpha-mp4-player/alpha-mp4-player.iml" filepath="$PROJECT_DIR$/alpha-mp4-player/alpha-mp4-player.iml" />
       <module fileurl="file://$PROJECT_DIR$/alpha-mp4-player/alpha-mp4-player.iml" filepath="$PROJECT_DIR$/alpha-mp4-player/alpha-mp4-player.iml" />
       <module fileurl="file://$PROJECT_DIR$/previewcamera/previewcamera.iml" filepath="$PROJECT_DIR$/previewcamera/previewcamera.iml" />
       <module fileurl="file://$PROJECT_DIR$/previewcamera/previewcamera.iml" filepath="$PROJECT_DIR$/previewcamera/previewcamera.iml" />
