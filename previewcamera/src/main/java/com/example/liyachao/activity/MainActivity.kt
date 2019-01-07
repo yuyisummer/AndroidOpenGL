@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.FrameLayout
 import com.example.liyachao.R
 import com.example.liyachao.utils.FileUtil
+import com.example.liyachao.utils.LOG
 import com.example.liyachao.video.CameraGLSurfaceView
 import com.knight.alphavideoplayer.giftvideo.VideoController
 
@@ -42,6 +43,7 @@ class MainActivity : Activity(), View.OnClickListener {
         val root = findViewById<FrameLayout>(R.id.root)
         val videoController = VideoController(root,isLoop = false,playerType = VideoController.IJKPLAYER)
         videoController.prepareVideo(FileUtil.initPath() + "Alarms/unicorn.mp4")
+        LOG.logI("yujiahui test3")
         videoController.start()
 //        FileUtil.initPath()
 //        val file = File(Environment.getExternalStorageDirectory().toString() + "/Alarms/unicorn.mp4")
